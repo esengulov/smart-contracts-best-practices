@@ -106,7 +106,7 @@
         "id": 59,
         "nodeType": "ImportDirective",
         "scope": 98,
-        "sourceUnit": 174,
+        "sourceUnit": 196,
         "src": "24:23:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -120,10 +120,10 @@
               "id": 60,
               "name": "Storage",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 173,
+              "referencedDeclaration": 195,
               "src": "76:7:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Storage_$173",
+                "typeIdentifier": "t_contract$_Storage_$195",
                 "typeString": "contract Storage"
               }
             },
@@ -133,7 +133,7 @@
           }
         ],
         "contractDependencies": [
-          173
+          195
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -141,7 +141,7 @@
         "id": 97,
         "linearizedBaseContracts": [
           97,
-          173
+          195
         ],
         "name": "Functionality1",
         "nodeType": "ContractDefinition",
@@ -166,7 +166,7 @@
                       "name": "owner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 159,
+                      "referencedDeclaration": 181,
                       "src": "433:5:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -183,7 +183,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 188,
+                        "referencedDeclaration": 210,
                         "src": "441:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -256,7 +256,7 @@
                       "name": "uintStorage",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 145,
+                      "referencedDeclaration": 167,
                       "src": "558:11:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_string_memory_$_t_uint256_$",
@@ -396,7 +396,7 @@
                         "name": "uintStorage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 145,
+                        "referencedDeclaration": 167,
                         "src": "681:11:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_string_memory_$_t_uint256_$",
@@ -566,7 +566,7 @@
         "id": 59,
         "nodeType": "ImportDirective",
         "scope": 98,
-        "sourceUnit": 174,
+        "sourceUnit": 196,
         "src": "24:23:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -580,10 +580,10 @@
               "id": 60,
               "name": "Storage",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 173,
+              "referencedDeclaration": 195,
               "src": "76:7:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Storage_$173",
+                "typeIdentifier": "t_contract$_Storage_$195",
                 "typeString": "contract Storage"
               }
             },
@@ -593,7 +593,7 @@
           }
         ],
         "contractDependencies": [
-          173
+          195
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -601,7 +601,7 @@
         "id": 97,
         "linearizedBaseContracts": [
           97,
-          173
+          195
         ],
         "name": "Functionality1",
         "nodeType": "ContractDefinition",
@@ -626,7 +626,7 @@
                       "name": "owner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 159,
+                      "referencedDeclaration": 181,
                       "src": "433:5:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -643,7 +643,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 188,
+                        "referencedDeclaration": 210,
                         "src": "441:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -716,7 +716,7 @@
                       "name": "uintStorage",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 145,
+                      "referencedDeclaration": 167,
                       "src": "558:11:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_string_memory_$_t_uint256_$",
@@ -856,7 +856,7 @@
                         "name": "uintStorage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 145,
+                        "referencedDeclaration": 167,
                         "src": "681:11:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_string_memory_$_t_uint256_$",
@@ -1008,12 +1008,12 @@
     "1564927363634": {
       "events": {},
       "links": {},
-      "address": "0xDB2df7Cc2b0DA231D655545e0E3a514bE0E863B6",
-      "transactionHash": "0x7a27b97883a8a802e42cc7cf6e58504f958b2c2a7ae4e54937d3b6f3c3821ce7"
+      "address": "0xC0589667FC78ef5448203123d468eaC23877c43A",
+      "transactionHash": "0xfab0510769d7bebe13231640256a98504607ee9542249cda98dbcd828ada1f3d"
     }
   },
   "schemaVersion": "3.0.11",
-  "updatedAt": "2019-08-04T14:11:56.587Z",
+  "updatedAt": "2019-08-04T19:30:35.703Z",
   "devdoc": {
     "methods": {}
   },

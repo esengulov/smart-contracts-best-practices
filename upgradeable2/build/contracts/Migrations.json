@@ -1377,12 +1377,12 @@
     "1564927363634": {
       "events": {},
       "links": {},
-      "address": "0x2c43D032045f9308cb1166F6CA796efc4ce72D91",
-      "transactionHash": "0xce9121bbcd81b1b041e4efaa830936d1666fe7ee10cd4360c0b7d26b9dbf1254"
+      "address": "0xedC3AE2994536657edDeb6a58565444651c80f6D",
+      "transactionHash": "0x1b7bd90c722c5179550e787c53dbe32fdd29f9e8758f203ed232a804a579aa66"
     }
   },
   "schemaVersion": "3.0.11",
-  "updatedAt": "2019-08-04T14:11:56.592Z",
+  "updatedAt": "2019-08-04T19:30:35.707Z",
   "devdoc": {
     "methods": {}
   },
