@@ -10,11 +10,5 @@ contract Storage {
 
     address public owner;
   	bool public _initialized;
-
-
-	modifier onlyOwner() {
-		require(msg.sender == owner);
-		_;
-	}  	
    
 }

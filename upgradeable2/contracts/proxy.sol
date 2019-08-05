@@ -17,17 +17,28 @@ contract Proxy is Storage {
 
 	address private functionalityContract;
 
+	modifier onlyOwner() {
+		require(msg.sender == owner);
+		_;
+	}  	
+
 	constructor(address _functionalityContract) public {
 		require (_functionalityContract != address(0));
 		functionalityContract = _functionalityContract;
 	}
 
-	function upgradeFunctionalityContract (address _newFunctionalityContract) public onlyOwner returns(bool) {
+	function upgrade (address _newFunctionalityContract) public onlyOwner returns(bool) {
 		functionalityContract = _newFunctionalityContract;
 		return true;
 	}
-	
 
+	function getFuncAddress() public view returns(address) {
+		return functionalityContract;
+	}
+	
+	function getOwner() public view returns(address) {
+		return owner;
+	}
 
 	//FALLBACK FUNCTION to pass all calls to functionlity contract
 	function () payable external {
@@ -46,7 +57,7 @@ contract Proxy is Storage {
 			case 0 {revert(ptr, size)}
 			default {return(ptr, size)}
 		}
-		
+
 	}
 
 	
