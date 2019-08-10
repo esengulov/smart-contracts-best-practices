@@ -5,26 +5,17 @@ import "./storage.sol";
 contract Proxy is Storage {
 
 
-	//  INHERITED FROM STORAGE
-	// 	------------------------------------------
-	//  mapping (string => uint) uintStorage;
-	//  mapping (string => address) addressStorage;
-	//  mapping (string => string) stringStorage;
-	//  mapping (string => bool) boolStorage;
-	//  address public owner;
-	//  bool public _initialized;
-
-
 	address private functionalityContract;
 
 	modifier onlyOwner() {
 		require(msg.sender == owner);
 		_;
-	}  	
+	}
 
 	constructor(address _functionalityContract) public {
 		require (_functionalityContract != address(0));
 		functionalityContract = _functionalityContract;
+		owner = msg.sender;
 	}
 
 	function upgrade (address _newFunctionalityContract) public onlyOwner returns(bool) {
@@ -35,7 +26,7 @@ contract Proxy is Storage {
 	function getFuncAddress() public view returns(address) {
 		return functionalityContract;
 	}
-	
+
 	function getOwner() public view returns(address) {
 		return owner;
 	}
@@ -60,6 +51,6 @@ contract Proxy is Storage {
 
 	}
 
-	
 
-}	
+
+}

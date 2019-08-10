@@ -8,7 +8,7 @@ contract Storage {
     mapping (string => string) stringStorage;
     mapping (string => bool) boolStorage;
 
-    address public owner;
+    address payable public owner;
   	bool public _initialized;
-   
+
 }
