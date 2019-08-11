@@ -1395,12 +1395,12 @@
     "1565447006362": {
       "events": {},
       "links": {},
-      "address": "0x194b7778f2c2C82073084d7322399e3437C3FD97",
-      "transactionHash": "0xb213fb0c3da14b37f4fe64045097a6afef5a99fdf5ea3180b20971434ea82027"
+      "address": "0x2efF6a74369Ff50e2f5dC194cfDD1a507eda6fD8",
+      "transactionHash": "0xb23e6cd647413d202294fc597db36d097b7ce16729c340c415110ac680dee455"
     }
   },
   "schemaVersion": "3.0.11",
-  "updatedAt": "2019-08-10T14:26:52.545Z",
+  "updatedAt": "2019-08-11T04:44:05.871Z",
   "devdoc": {
     "methods": {}
   },
