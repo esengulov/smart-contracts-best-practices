@@ -123,10 +123,18 @@ module.exports = async function(deployer) {
 		console.log(">> checking that updating age (to 40) passes when using account2... ");
 		await proxyRouter2.setUintValue("age", 40, {from: account2});
 		let ageValue5 = await proxyRouter2.getUintValue("age");
-		console.log(">> the age value is... " + ageValue5);		
+		console.log(">> the age value is... " + ageValue5);
 		// essentially we were able to change the owner in proxy using init method in func2
 		// note that if we try running that method again it will fail
 		// that is to ensure that it is able to run only once.
-		// await proxyRouter2.init(account1, {from:account1});		
+		// await proxyRouter2.init(account1, {from:account1});
+
+		// note: 
+		// that func can not have any variables that isn't part of storage 
+		// as calling a method that tries to update that vairable via proxy
+		// will be updating the variable within the scope of proxy
+		// as a result we may overwrite something and break the contract
+
+
 
 };
