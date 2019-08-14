@@ -104,14 +104,26 @@ module.exports = async function(deployer) {
 
 		// new router address for Truffle
 		let proxyRouter2 = await Functionality3.at(proxy.address);
-		await proxyRouter2.init(account2, {from:account2});
 
+		console.log(">> before running init, try updating age to 39... ");
+		await proxyRouter2.setUintValue("age", 39, {from: account1});
+		console.log(">> before running init, updating age using account1 should work...");
+		let ageValue4 = await proxyRouter2.getUintValue("age");
+		console.log(">> the age value is... " + ageValue4);
+
+		await proxyRouter2.init(account2, {from:account2});
 		console.log(">> running func3.init via proxy... ");
+
 		console.log(">> it should set owner var in proxy to: " + account2);
 		console.log(">> checking that owner in proxy changed... ");
 		let newOwnerAddress2 = await proxy.getOwner();	
 		console.log(">> owner in proxy changed to: " + newOwnerAddress2);
-
+		console.log(">> checking that updating age (to 40) reverts when using account1... ");
+		//await proxyRouter2.setUintValue("age", 40, {from: account1});
+		console.log(">> checking that updating age (to 40) passes when using account2... ");
+		await proxyRouter2.setUintValue("age", 40, {from: account2});
+		let ageValue5 = await proxyRouter2.getUintValue("age");
+		console.log(">> the age value is... " + ageValue5);		
 		// essentially we were able to change the owner in proxy using init method in func2
 		// note that if we try running that method again it will fail
 		// that is to ensure that it is able to run only once.
