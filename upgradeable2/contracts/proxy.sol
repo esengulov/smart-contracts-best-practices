@@ -8,8 +8,8 @@ contract Proxy is Storage {
 	address private functionalityContract;
 
 	modifier onlyOwner() {
-		require(msg.sender == owner);
-		_;
+			require(msg.sender == owner);
+			_;
 	}
 
 	constructor(address _functionalityContract) public {
@@ -31,7 +31,7 @@ contract Proxy is Storage {
 		return owner;
 	}
 
-	//FALLBACK FUNCTION to pass all calls to functionlity contract
+	//FALLBACK FUNCTION to pass all calls to functionality contract
 	function () payable external {
 
 		address implementation = functionalityContract;
