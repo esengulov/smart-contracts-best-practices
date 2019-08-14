@@ -105,7 +105,7 @@ module.exports = async function(deployer) {
 		// new router address for Truffle
 		let proxyRouter2 = await Functionality3.at(proxy.address);
 
-		console.log(">> before running init, try updating age to 39... ");
+		console.log(">> before running init, try updating age to 39 + 1... ");
 		await proxyRouter2.setUintValue("age", 39, {from: account1});
 		console.log(">> before running init, updating age using account1 should work...");
 		let ageValue4 = await proxyRouter2.getUintValue("age");
@@ -118,9 +118,9 @@ module.exports = async function(deployer) {
 		console.log(">> checking that owner in proxy changed... ");
 		let newOwnerAddress2 = await proxy.getOwner();	
 		console.log(">> owner in proxy changed to: " + newOwnerAddress2);
-		console.log(">> checking that updating age (to 40) reverts when using account1... ");
+		console.log(">> checking that updating age (to 40 + 1) reverts when using account1... ");
 		//await proxyRouter2.setUintValue("age", 40, {from: account1});
-		console.log(">> checking that updating age (to 40) passes when using account2... ");
+		console.log(">> checking that updating age (to 40 + 1) passes when using account2... ");
 		await proxyRouter2.setUintValue("age", 40, {from: account2});
 		let ageValue5 = await proxyRouter2.getUintValue("age");
 		console.log(">> the age value is... " + ageValue5);

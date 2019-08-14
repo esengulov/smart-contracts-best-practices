@@ -9,10 +9,6 @@ contract Functionality1 is Storage {
 			_;
 	}
 
-	constructor() public {
-		//owner = msg.sender;
-	}
-
 
   function getUintValue(string memory _uintVariableName) public view returns(uint256) {
   		return uintStorage[_uintVariableName];
